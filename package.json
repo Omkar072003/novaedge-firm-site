@@ -1,0 +1,29 @@
+{
+  "name": "novaedge-firm-site",
+  "version": "1.0.0",
+  "description": "NovaEdge Solutions firm landing page using Vite, Three.js, GSAP, Anime.js",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "vite",
+    "three.js",
+    "gsap",
+    "anime.js",
+    "landing-page",
+    "firm"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "animejs": "^3.2.2",
+    "gsap": "^3.12.2",
+    "three": "^0.164.1"
+  },
+  "devDependencies": {
+    "vite": "^5.2.10"
+  }
+}
