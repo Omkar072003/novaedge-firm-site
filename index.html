@@ -1,63 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NovaEdge Solutions</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="NovaEdge Solutions - Innovating Your Tomorrow with premium IT services and consulting.">
-  <meta name="keywords" content="NovaEdge, IT Solutions, Consulting, Three.js, GSAP, Vite">
-  <meta name="author" content="NovaEdge Solutions">
-  <meta property="og:title" content="NovaEdge Solutions - Innovating Your Tomorrow">
-  <meta property="og:description" content="Premium IT solutions, consulting, and design services for your business.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourdomain.com">
-  <meta property="og:image" content="https://yourdomain.com/og-preview.png">
-
-  <link rel="icon" href="NovaEdge Solutions (2)-Photoroom.png" type="image/x-icon">
-  <link rel="stylesheet" href="/src/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NovaEdge Solutions provides innovative IT solutions, including custom software, cloud solutions, and UI/UX design.">
+    <title>NovaEdge Solutions</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="Adobe Express - file.png" type="image/x-icon">
+    <!-- Fallback CDN scripts for local testing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script type="module" src="src/main.js" defer></script>
 </head>
 <body>
-  <nav id="navbar">
-    <div class="logo">
-      <img src="NovaEdge Solutions (2)-Photoroom.png" alt="NovaEdge Logo">
-      <span class="gradient-text">NovaEdge</span>
-    </div>
-    <div class="links">
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="logo">
+            <img src="Adobe Express - file.png" alt="NovaEdge Solutions Logo">
+            <span>NovaEdge</span>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="menu-icon"></span>
+        </button>
+        <div class="links">
+            <a href="#services">Services</a>
+            <a href="#who-we-are">Who We Are</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-  <header>
-    <h1 class="gradient-text">NovaEdge Solutions</h1>
-    <p id="tagline">Innovating Your Tomorrow</p>
-  </header>
+    <header>
+        <h1 id="firm-name">NovaEdge Solutions</h1>
+        <p id="tagline">Innovating Your Tomorrow</p>
+        <div id="three-container" role="img" aria-label="3D interactive sphere animation"></div>
+    </header>
 
-  <div id="three-container"></div>
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Custom Software Development</li>
+            <li>Business Strategy Consulting</li>
+            <li>Cloud Solutions</li>
+            <li>UI/UX Design</li>
+            <li>IT Support & Maintenance</li>
+        </ul>
+    </section>
 
-  <section id="services">
-    <h2 class="gradient-text">Our Services</h2>
-    <ul>
-      <li>Custom Software Development</li>
-      <li>Business Strategy Consulting</li>
-      <li>Cloud Solutions</li>
-      <li>UI/UX Design</li>
-      <li>IT Support & Maintenance</li>
-    </ul>
-  </section>
+    <section id="who-we-are">
+        <h2>Who We Are</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <h3>Omkar Nawale</h3>
+                <p>Omkar Nawale is a creative developer specializing in building interactive, clean, and scalable web applications using cutting-edge technologies like Three.js, Vite, and GSAP. At NovaEdge Solutions, he collaborates with Irfan Shaikh to deliver innovative IT solutions, transforming ideas into digital experiences that help businesses grow and stand out.</p>
+                <a href="https://omkar-portfolio-site.vercel.app/" class="portfolio-link">Omkar's Portfolio</a>
+            </div>
+            <div class="team-member">
+                <h3>Irfan Shaikh</h3>
+                <p>Irfan Shaikh is a skilled developer with expertise in crafting interactive and scalable web applications using modern tools like Three.js, Vite, and GSAP. At NovaEdge Solutions, he works alongside Omkar Nawale to create cutting-edge IT solutions that empower businesses to thrive in the digital landscape.</p>
+                <a href="#" class="portfolio-link">Irfan's Portfolio</a>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2 class="gradient-text">Contact Us</h2>
-    <p>Email: contact@novaedgesolutions.com</p>
-    <a href="mailto:contact@novaedgesolutions.com" class="contact-button">Get In Touch</a>
-  </section>
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('hkft.png');"></div>
+                <h3>Hare Krishna Foundation Trust</h3>
+                <p>Hare Krishna Foundation Trust is committed to providing high-quality, accurate, and timely diagnostic solutions to help you and your healthcare providers make informed decisions about your health. Our state-of-the-art facilities are equipped with the latest technology, including MRI, CT-Scan, X-Ray, Sonography, and Pathology services, ensuring that you receive the best care possible.</p>
+                <a href="https://harekrishnafoundationtrust.com/" class="learn-more">Visit Site</a>
+            </div>
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('project2.jpg');"></div>
+                <h3>Cloud Dashboard</h3>
+                <p>Designed and implemented a cloud-based dashboard for real-time data analytics, enabling businesses to monitor performance metrics efficiently.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('project3.jpg');"></div>
+                <h3>Interactive Learning Portal</h3>
+                <p>Created an engaging learning management system with interactive UI/UX, supporting thousands of users with personalized content delivery.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    &copy; 2025 NovaEdge Solutions. All rights reserved.
-  </footer>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:contact@novaedgesolutions.com">contact@novaedgesolutions.com</a></p>
+        <a href="mailto:contact@novaedgesolutions.com" class="contact-button" role="button">Get In Touch</a>
+    </section>
 
-  <script type="module" src="/src/main.js"></script>
+    <footer>
+        <p>© 2025 NovaEdge Solutions. All rights reserved.</p>
+    </footer>
 </body>
 </html>
