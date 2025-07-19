@@ -30,7 +30,7 @@ public/ - Place your favicon and logo here
 
 1️⃣ Clone the repository:
 
-git clone https://github.com/your-username/novaedge-firm-site.git
+git clone https://github.com/Omkar072003/novaedge-firm-site.git
 cd novaedge-firm-site
 
 2️⃣ Install dependencies:
@@ -50,10 +50,6 @@ npm run build
 🌐 Deployment
 
 ✅ Vercel: Push to GitHub and import the repo on Vercel. It will auto-deploy.
-
-✅ Netlify: Connect your GitHub repo, set build command npm run build and publish directory dist.
-
-✅ GitHub Pages: Use vite-plugin-gh-pages or manual deployment.
 
 🤝 Contributing
 
