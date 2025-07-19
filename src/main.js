@@ -61,12 +61,12 @@ try {
 try {
     console.log('Applying Anime.js animation');
     anime({
-        targets: '#firm-name',
-        color: ['#0d47a1', '#1565c0', '#0d47a1'],
-        scale: [1, 1.05, 1],
-        duration: 4000,
-        loop: true,
-        easing: 'easeInOutSine'
+        // targets: '#firm-name',
+        // color: ['#0d47a1', '#1565c0', '#0d47a1'],
+        // scale: [1, 1.05, 1],
+        // duration: 4000,
+        // loop: true,
+        // easing: 'easeInOutSine'
     });
 } catch (error) {
     console.error('Anime.js animation failed:', error);
