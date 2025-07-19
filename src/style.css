@@ -396,6 +396,10 @@ footer {
     color: white;
     margin-top: 3rem;
 }
+#tnc,#pp{
+    color: white;
+    text-decoration: none;
+}
 
 /* Responsive Design */
 @media (max-width: 900px) {
